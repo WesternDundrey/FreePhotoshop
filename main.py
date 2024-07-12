@@ -1,4 +1,5 @@
 import customtkinter as ctk
+from image_widgets import *
 
 
 class App(ctk.CTk):
@@ -9,7 +10,15 @@ class App(ctk.CTk):
         self.geometry('1000x600')
         self.title('PhotoEdit')
 
-        self.minsize(800,500)
+        self.minsize(800, 500)
+        # layout
+        self.rowconfigure(0, weight=1)
+        self.columnconfigure(0, weight=2)
+        self.columnconfigure(1, weight=6)
+
+        # widgets
+        # ImportButton
+        ImageImport(self)
         # run
         self.mainloop()
 
