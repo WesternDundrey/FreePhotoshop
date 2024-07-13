@@ -18,9 +18,12 @@ class App(ctk.CTk):
 
         # widgets
         # ImportButton
-        ImageImport(self)
+        ImageImport(self, self.import_image)
         # run
         self.mainloop()
+
+    def import_image(self, path):
+        print(path)
 
 
 App()

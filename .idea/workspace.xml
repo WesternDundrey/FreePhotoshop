@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="317bf9ac-ef0d-40e3-a825-2eb3c567dd08" name="Changes" comment="Open image Button" />
+    <list default="true" id="317bf9ac-ef0d-40e3-a825-2eb3c567dd08" name="Changes" comment="Open image Button">
+      <change beforePath="$PROJECT_DIR$/image_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/image_widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720792628685</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Open image Button">
+      <option name="closed" value="true" />
+      <created>1720868905828</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720868905828</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
