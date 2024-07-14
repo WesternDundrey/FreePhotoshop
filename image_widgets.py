@@ -1,5 +1,5 @@
 import customtkinter as ctk
-
+from tkinter import filedialog
 
 class ImageImport(ctk.CTkFrame):
     def __init__(self, parent, import_func):
@@ -10,5 +10,5 @@ class ImageImport(ctk.CTkFrame):
         ctk.CTkButton(self, text='open image', command=self.open_dialog).pack(expand=True)
 
     def open_dialog(self):
-        path = 'test'
+        path = filedialog.askopenfile()
         self.import_func(path)

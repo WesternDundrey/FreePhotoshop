@@ -1,10 +1,9 @@
-import customtkinter as ctk
 from image_widgets import *
-
+from PIL import Image
+import os
 
 class App(ctk.CTk):
     def __init__(self):
-
         super().__init__()
         ctk.set_appearance_mode('dark')
         self.geometry('1000x600')
@@ -23,7 +22,14 @@ class App(ctk.CTk):
         self.mainloop()
 
     def import_image(self, path):
-        print(path)
+        try:
+            # Use os.path.normpath to normalize the path
+            normalized_path = os.path.normpath(path)
+            # Open the image using a raw string
+            self.image = Image.open(r"{}".format(normalized_path))
+            self.image.show()
+        except Exception as e:
+            print(f"Error opening image: {e}")
 
-
-App()
+if __name__ == "__main__":
+    App()
